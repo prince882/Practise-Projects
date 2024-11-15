@@ -4,7 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <div>Prince's Portfolio</div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Contact</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="Secleft">
+        Hi, I am Prince . A Passionate
+        <div id="element"></div>
+        <button id="gitbtn">Visit Github</button>
+      </section>
+      <section class="Secright">
+        <img src="deve.png" alt="" />
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Web Developer"],
+        typeSpeed: 40,
+      });
+    </script>
+  </body>
 </html>
