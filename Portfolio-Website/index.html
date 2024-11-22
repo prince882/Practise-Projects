@@ -7,9 +7,23 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
+    <div id="hamburger" class="hamburger">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Contact</a></li>
+        <li><a href="/">Services</a></li>
+        <li><a href="/">Projects</a></li>
+      </ul>
+    </div>
     <header>
       <nav>
         <div>Prince's Portfolio</div>
+        <div class="lines">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/">About</a></li>
@@ -23,12 +37,46 @@
       <section class="Secleft">
         Hi, I am Prince . A Passionate
         <div id="element"></div>
-        <button id="gitbtn">Visit Github</button>
+        <a href="https://github.com/prince882">
+          <button id="gitbtn">Visit Github</button>
+        </a>
       </section>
       <section class="Secright">
         <img src="deve.png" alt="" />
       </section>
     </main>
+    <section class="Status">
+      <hr />
+      <h1>Current Status</h1>
+      <div class="st-info">
+        <h4>
+          In am Currently learning Web Developement . I have learnt Whole
+          HTML,CSS and JavaScript and In the Backend i know express js only till
+          now.
+        </h4>
+      </div>
+      <h2 class="ap">Apps I Use</h2>
+      <div class="app neo">
+        <img src="neov.png" alt="" />
+        <h4>
+          I Primarily use Neovim to Code as it Boosts Your productivity too
+          much.Inside Neovim i to use lazyvim to set it up.
+        </h4>
+      </div>
+      <div class="app vs">
+        <img src="vscode.png" alt="" />
+        <h4 id="aph4">
+          I rarely use Vs Code for some specific projects of mine .
+        </h4>
+      </div>
+      <div class="app git">
+        <img id="gitimg" src="github.png" alt="" />
+        <h4>
+          I Frequently use github to upload code to the cloud and also its free
+          hosting that is Github Pages.I use lazygit to manage git.
+        </h4>
+      </div>
+    </section>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
@@ -36,5 +84,6 @@
         typeSpeed: 40,
       });
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
